@@ -1,0 +1,29 @@
+{
+    "name": "lwxtd/tag",
+    "description": "package for adding tag model to project",
+    "authors": [
+        {
+            "name": "mostafa habibi",
+            "email": "lwxtd@ymail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~8",
+        " cviebrock/eloquent-sluggable ": "8.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lwxtd\\Tag\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lwxtd\\Tag\\TagServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Lwxtd\\Tag\\TagFacade"
+            }
+        }
+    }
+}
